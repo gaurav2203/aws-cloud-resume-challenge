@@ -10,8 +10,8 @@ pipeline{
             steps{
                 withAWS(region:'us-east-1', credentials:'gaurav-AWS'){
                     sh 'echo "Uploading the files"'
-                    
-                    s3Upload(workingDir:'website/*', bucket:'gaurav-cloud-resume-challenge',
+
+                    s3Upload(file:'website/*', bucket:'gaurav-cloud-resume-challenge',
                     path:'/')
 
                     sh 'echo "Upload is SUCCESS!"'
