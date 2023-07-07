@@ -11,7 +11,7 @@ pipeline{
                 withAWS(region:'us-east-1', credentials:'gaurav-AWS'){
                     sh 'echo "Uploading the files"'
 
-                    s3Upload(file:'website', bucket:'gaurav-cloud-resume-challenge')
+                    s3Upload(file:'website', bucket:'tf-crc')
 
                     sh 'echo "Upload is SUCCESS!"'
                 }
