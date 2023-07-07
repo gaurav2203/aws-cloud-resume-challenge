@@ -1,5 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
 
+
+.profilebox {
+    display: flex
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    background-image: url('./assets/gaurav_profile.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  
+.profilepic {
+    height: auto;
+    display: inline-block;
+    margin: 8px 0;
+    line-height: 1.6;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+.buttons,.main .profile {
+    display: flex;
+    justify-content: center
+}
+
+.main .profile {
+    align-items: center;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
+    text-align: center
+}
+.profile .profile_inner h1 {
+    padding: 12px 0
+}
+
+.profile img {
+    display: inline-table;
+    border-radius: 50%;
+    pointer-events: none
+}
+.profile img {
+    transform: scale(.85)
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -44,6 +92,10 @@ body{
 
 .bgcolor-black{
     background-color: var(--color-blue);
+}
+
+.exp-align{
+    padding-left: 0px;
 }
 
 /* #global classes */
@@ -196,7 +248,7 @@ body{
 	padding: 5% 8%;
 	position: absolute;
 	content: "";
-	top: 50%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%) rotateY(90deg);
 	transform-origin: 50%;
@@ -212,6 +264,9 @@ body{
 	opacity: 1;
 }
 
+.writtentext{
+    font-size: 25px;
+}
 
 /*project icons- github and live site*/
 .giti, .eye{
